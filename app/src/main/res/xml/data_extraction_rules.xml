@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Este arquivo é usado pelo Android S (API 31) e superior para especificar quais dados do dispositivo
+ devem ser incluídos no backup na nuvem. Se 'full-backup-content' não for especificado,
+ todo o conteúdo do aplicativo será incluído no backup por padrão.
+ Saiba mais em https://developer.android.com/guide/topics/data/autobackup#FullBackup
+-->
+<data-extraction-rules>
+    <cloud-backup disableIfNoEncryptionCapabilities="true">
+        <!--
+        TODO: Defina suas regras de backup aqui. Por padrão, todos os arquivos compartilhados
+        e arquivos externos são incluídos no backup. Saiba mais em:
+        https://developer.android.com/guide/topics/data/autobackup#xml-config e
+        https://developer.android.com/guide/topics/data/backup#BackupEverything
+        -->
+        <!-- Exemplo: Excluir um arquivo específico -->
+        <!-- <exclude domain="file" path="my_sensitive_data.txt"/> -->
+        <!-- Exemplo: Excluir todos os arquivos em um diretório específico -->
+        <!-- <exclude domain="database" path="my_temp_db.db"/> -->
+    </cloud-backup>
+    <device-transfer>
+        <!--
+        TODO: Defina suas regras de transferência de dispositivo para dispositivo aqui. Por padrão, todos os arquivos
+        compartilhados e arquivos externos são incluídos na transferência. Saiba mais em:
+        https://developer.android.com/guide/topics/data/autobackup#DeviceToDeviceTransfer
+        -->
+        <!-- <include domain="sharedpref" path="."/> -->
+        <!-- <exclude domain="file" path="my_large_cache_file.tmp"/> -->
+    </device-transfer>
+</data-extraction-rules>

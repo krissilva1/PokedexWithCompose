@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- TODO: Defina suas regras de backup aqui. Por padrão, todos os arquivos compartilhados
+         e arquivos externos são incluídos no backup. Saiba mais em:
+         https://developer.android.com/guide/topics/data/autobackup#IncludingFiles
+         https://developer.android.com/guide/topics/data/autobackup#ExcludingFiles
+    -->
+    <!-- Exemplo: Incluir tudo no domínio "sharedpref" exceto um arquivo específico -->
+    <!--
+    <include domain="sharedpref" path="."/>
+    <exclude domain="sharedpref" path="device.xml"/>
+    -->
+
+    <!-- Exemplo: Excluir todos os bancos de dados -->
+    <!-- <exclude domain="database" /> -->
+
+    <!-- Se você não especificar include/exclude, tudo é incluído por padrão
+         para a maioria dos domínios, exceto aqueles que contêm caches ou
+         arquivos que não devem ser feitos backup.
+    -->
+</full-backup-content>
